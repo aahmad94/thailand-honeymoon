@@ -3,144 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Thailand Honeymoon — January · 11 Days</title>
+  <title>Thailand Honeymoon — January · 12 Days</title>
   <style>
-    :root {
-      --ink: #1c1917; --muted: #57534e; --paper: #faf7f2; --card: #fff;
-      --line: #e7e0d6; --sea: #0f766e; --deep: #134e4a;
-    }
+    :root { --ink:#1c1917; --muted:#57534e; --paper:#faf7f2; --card:#fff; --line:#e7e0d6; --sea:#0f766e; --deep:#134e4a; }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: Georgia, "Iowan Old Style", serif; background: var(--paper); color: var(--ink); line-height: 1.55; }
-    header { background: linear-gradient(160deg, #134e4a 0%, #0f766e 55%, #b45309 140%); color: #fff; padding: 2.4rem 1.25rem 2rem; }
-    header h1 { font-weight: 600; font-size: 1.7rem; margin: 0 0 .35rem; }
-    header p { margin: 0; opacity: .92; }
-    .wrap { max-width: 720px; margin: 0 auto; padding: 1.25rem; }
-    .badge { display: inline-block; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.25); padding: .2rem .55rem; border-radius: 999px; font-size: .75rem; letter-spacing: .04em; text-transform: uppercase; margin-bottom: .7rem; }
-    h2 { font-size: 1.25rem; margin: 1.6rem 0 .55rem; color: var(--deep); }
-    h3 { font-size: 1.05rem; margin: 1.1rem 0 .4rem; }
-    p, li { font-size: .98rem; }
-    .muted { color: var(--muted); }
-    .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 1rem 1.05rem; margin: .75rem 0; }
-    .split { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; }
-    .stat { text-align: center; }
-    .stat strong { display: block; font-size: 1.35rem; color: var(--sea); }
-    .stat span { font-size: .8rem; color: var(--muted); }
-    table { width: 100%; border-collapse: collapse; font-size: .9rem; }
-    th, td { text-align: left; padding: .45rem .35rem; border-bottom: 1px solid var(--line); vertical-align: top; }
-    th { color: var(--muted); font-weight: 600; font-size: .78rem; text-transform: uppercase; }
-    .tag { display: inline-block; font-size: .72rem; background: #ecfdf5; color: #115e59; padding: .12rem .45rem; border-radius: 6px; margin-right: .25rem; }
-    .goldtag { background: #fff7ed; color: #9a3412; }
-    ol.days { padding-left: 1.15rem; }
-    ol.days li { margin-bottom: .55rem; }
-    footer { padding: 1.5rem 1.25rem 2.5rem; color: var(--muted); font-size: .82rem; text-align: center; }
-    a { color: var(--sea); }
-    .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: .45rem; margin: .75rem 0 .2rem; }
-    .gallery.wide { grid-template-columns: 1fr; }
-    .gallery img, .stay img { width: 100%; height: 160px; object-fit: cover; border-radius: 10px; display: block; background: #ddd; }
-    .gallery.wide img { height: 210px; }
-    .stay img { height: 180px; margin: .35rem 0 .5rem; }
-    .cap { font-size: .75rem; color: var(--muted); margin: .25rem 0 .6rem; }
-    @media (max-width: 520px) {
-      .split, .gallery { grid-template-columns: 1fr; }
-      .gallery img, .stay img { height: 190px; }
-    }
+    body { margin:0; font-family: Georgia, serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+    header { background:linear-gradient(160deg,#134e4a 0%,#0f766e 55%,#b45309 140%); color:#fff; padding:2.4rem 1.25rem 2rem; }
+    header h1 { font-weight:600; font-size:1.7rem; margin:0 0 .35rem; }
+    header p { margin:0; opacity:.92; }
+    .wrap { max-width:720px; margin:0 auto; padding:1.25rem; }
+    .badge { display:inline-block; background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.25); padding:.2rem .55rem; border-radius:999px; font-size:.75rem; letter-spacing:.04em; text-transform:uppercase; margin-bottom:.7rem; }
+    h2 { font-size:1.25rem; margin:1.6rem 0 .55rem; color:var(--deep); }
+    h3 { font-size:1.05rem; margin:1.15rem 0 .35rem; }
+    p, li { font-size:.98rem; }
+    .muted { color:var(--muted); }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:1rem 1.05rem; margin:.75rem 0; }
+    .split { display:grid; grid-template-columns:1fr 1fr; gap:.7rem; }
+    .stat { text-align:center; }
+    .stat strong { display:block; font-size:1.35rem; color:var(--sea); }
+    .stat span { font-size:.8rem; color:var(--muted); }
+    table { width:100%; border-collapse:collapse; font-size:.9rem; }
+    th, td { text-align:left; padding:.45rem .35rem; border-bottom:1px solid var(--line); vertical-align:top; }
+    th { color:var(--muted); font-weight:600; font-size:.78rem; text-transform:uppercase; }
+    .tag { display:inline-block; font-size:.72rem; background:#ecfdf5; color:#115e59; padding:.12rem .45rem; border-radius:6px; margin-right:.25rem; }
+    .goldtag { background:#fff7ed; color:#9a3412; }
+    ol.days { padding-left:1.15rem; }
+    ol.days li { margin-bottom:.5rem; }
+    footer { padding:1.5rem 1.25rem 2.5rem; color:var(--muted); font-size:.82rem; text-align:center; }
+    img.hero { width:100%; height:180px; object-fit:cover; border-radius:10px; display:block; margin:.4rem 0 .55rem; }
+    .gallery { display:grid; grid-template-columns:1fr 1fr; gap:.45rem; margin:.75rem 0 .2rem; }
+    .gallery img { width:100%; height:150px; object-fit:cover; border-radius:10px; }
+    .cap { font-size:.75rem; color:var(--muted); margin:.2rem 0 .6rem; }
+    @media (max-width:520px) { .split,.gallery { grid-template-columns:1fr; } }
   </style>
 </head>
 <body>
   <header>
     <div class="wrap" style="padding-top:0;padding-bottom:0">
-      <div class="badge">Draft · shareable</div>
-      <h1>Thailand · 11 days</h1>
-      <p>Krabi cliffs first, Koh Lanta beaches after. Andaman dry season — January.</p>
+      <div class="badge">Draft v3 · ~$300/night cap</div>
+      <h1>Thailand · 12 days</h1>
+      <p>Ao Nang first for views and food, then Koh Lanta to slow down. No Ritz.</p>
     </div>
   </header>
   <div class="wrap">
     <div class="card split">
-      <div class="stat"><strong>5 nights</strong><span>Krabi / Railay / Tubkaek</span></div>
-      <div class="stat"><strong>5 nights</strong><span>Koh Lanta</span></div>
+      <div class="stat"><strong>5 nights</strong><span>Ao Nang, Krabi</span></div>
+      <div class="stat"><strong>6 nights</strong><span>Koh Lanta</span></div>
     </div>
     <div class="gallery">
-      <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1200&q=70" alt="Thai Andaman limestone islands" />
+      <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1200&q=70" alt="Andaman islands" />
       <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=70" alt="Tropical beach" />
     </div>
-    <p class="cap">Andaman limestone water and a long west-coast beach — the two moods of this trip.</p>
-    <p class="muted">10 nights = 11 calendar days. Fly into and out of <strong>Krabi (KBV)</strong> unless a Phuket fare is clearly better.</p>
-    <h2>Recommended split</h2>
+    <p class="cap">11 nights = 12 calendar days. Target $200–300/night. After Jan 7 is cheaper than Jan 1–6.</p>
+    <h2>Why this split</h2>
     <div class="card">
-      <p><strong>Why this order:</strong> Land, do the photogenic boat days while energy is high, then slow down on Lanta’s longer beaches.</p>
-      <table>
-        <tr><th>Nights</th><th>Base</th><th>Purpose</th></tr>
-        <tr><td>5</td><td>Krabi side</td><td>Cliffs, Railay, Hong / 4 Islands, spa</td></tr>
-        <tr><td>5</td><td>Koh Lanta</td><td>Beach, sunset, marine-park day, rest</td></tr>
-      </table>
+      <p>Ao Nang puts cliff views, the Railay pier, and restaurants in walking distance. Lanta is for longer beaches. Dropped Phulay Bay, Banyan Tree, and Rayavadee — those usually sit well above $300 in January.</p>
     </div>
-    <h2>Flights</h2>
+    <h2>Flights and transfers</h2>
     <div class="card">
-      <p><span class="tag">In / out</span> <strong>Krabi (KBV)</strong><br>
-         <span class="tag">Backup</span> Phuket (HKT)<br>
-         <span class="tag">Pakistan</span> Lahore (LHE) or Islamabad (ISB)</p>
-      <p>Typical path: <strong>LHE → BKK</strong> then <strong>BKK → KBV</strong> (~1h15). Land KBV before mid-afternoon. Leave Lanta 4+ hours before a domestic hop.</p>
-    </div>
-    <h2>How you move (no car)</h2>
-    <div class="card">
-      <table>
-        <tr><th>Leg</th><th>How</th><th>Notes</th></tr>
-        <tr><td>KBV → Ao Nang</td><td>Hotel car</td><td>25–35 min, ~฿600–900</td></tr>
-        <tr><td>Ao Nang → Railay</td><td>Longtail</td><td>10–15 min, ~฿100</td></tr>
-        <tr><td>Krabi → Koh Lanta</td><td>Van + ferry</td><td>2.5–3.5 hrs to Saladan</td></tr>
-        <tr><td>On Lanta</td><td>Hotel shuttle</td><td>Island is long</td></tr>
-      </table>
+      <p><span class="tag">In / out</span> Krabi (KBV)</p>
+      <p>LHE or ISB → BKK → KBV. Hotel car to Ao Nang 25–35 min. Longtail to Railay 10–15 min. Van + ferry to Lanta 2.5–3.5 hrs. No rental car.</p>
     </div>
     <h2>Day-by-day</h2>
     <div class="card">
       <ol class="days">
-        <li><strong>Day 1</strong> — Arrive KBV. Sleep.</li>
-        <li><strong>Day 2</strong> — Railay / Phra Nang.</li>
-        <li><strong>Day 3</strong> — Hong Islands or 4 Islands. Halal packed lunch.</li>
-        <li><strong>Day 4</strong> — Spa. Optional Tiger Cave.</li>
-        <li><strong>Day 5</strong> — Buffer day.</li>
-        <li><strong>Day 6</strong> — Transfer to Koh Lanta.</li>
-        <li><strong>Day 7–8</strong> — Beach and sunset.</li>
-        <li><strong>Day 9</strong> — Koh Rok if seas are good.</li>
-        <li><strong>Day 10</strong> — Rest.</li>
-        <li><strong>Day 11</strong> — Fly home via KBV.</li>
+        <li><strong>Day 1</strong> — Land KBV. Ao Nang sunset and easy dinner.</li>
+        <li><strong>Day 2</strong> — Railay West + Phra Nang by longtail. Night market after.</li>
+        <li><strong>Day 3</strong> — Hong Islands. Packed halal / seafood lunch.</li>
+        <li><strong>Day 4</strong> — Spa morning. Nopparat Thara walk or Tiger Cave.</li>
+        <li><strong>Day 5</strong> — Buffer day. Mosque-area halal stalls after Maghrib.</li>
+        <li><strong>Day 6</strong> — Transfer to Koh Lanta. Beach only.</li>
+        <li><strong>Day 7</strong> — Long Beach sunset dinner in walking distance.</li>
+        <li><strong>Day 8</strong> — Half-day Lanta Old Town by hotel car.</li>
+        <li><strong>Day 9</strong> — Koh Rok if seas are calm.</li>
+        <li><strong>Day 10</strong> — Rest / spa.</li>
+        <li><strong>Day 11</strong> — Extra beach day.</li>
+        <li><strong>Day 12</strong> — Saladan → KBV → home.</li>
       </ol>
     </div>
-    <h2>Krabi stays</h2>
+    <h2>Krabi — pick one, 5 nights</h2>
     <div class="card">
-      <p><span class="goldtag">Pick one</span></p>
-      <h3>1. Rayavadee — Railay</h3>
-      <img class="stay" src="https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&fit=crop&w=1200&q=70" alt="Cliff beach" style="width:100%;height:180px;object-fit:cover;border-radius:10px" />
-      <p>Boat-only, three beaches. Hotel runs the transfer.</p>
-      <h3>2. Phulay Bay, Ritz-Carlton Reserve — Tubkaek</h3>
-      <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=70" alt="Pool villa" style="width:100%;height:180px;object-fit:cover;border-radius:10px" />
-      <p>Road-access villas. 15–20 min to Ao Nang pier.</p>
-      <h3>3. Banyan Tree Krabi — Tubkaek</h3>
-      <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200&q=70" alt="Resort villa" style="width:100%;height:180px;object-fit:cover;border-radius:10px" />
-      <p>Pool suites, strong spa, quieter than Ao Nang.</p>
+      <p><span class="goldtag">Target $180–300</span> Book sea-view or cliff-view, not garden.</p>
+      <h3>1. Avani Ao Nang Cliff — first pick</h3>
+      <img class="hero" src="https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&fit=crop&w=1200&q=70" alt="Cliff and sea" />
+      <p>Cliff / rooftop views toward the Railay karsts. About 500 m to the beach and longtail pier. Night market, cafes, and mosque-area halal food are a 5–12 minute walk. Mid-January sea-view often fits the cap; 1–6 Jan may not.</p>
+      <h3>2. Holiday Inn Resort Krabi Ao Nang Beach</h3>
+      <p>On the sand. Same restaurant strip, easier swim, less wow from the room.</p>
+      <h3>3. Hotel Adam or Pimann Buri pool villas</h3>
+      <p>Plunge pool + short Grab to the beach. Confirm January — some villa dates creep over $300.</p>
+      <p class="muted">Skipped: Phulay Bay, Banyan Tree, Rayavadee. Tubkaak is pretty but isolated and often over budget in January.</p>
     </div>
-    <h2>Koh Lanta stays</h2>
+    <h2>Koh Lanta — pick one, 6 nights</h2>
     <div class="card">
-      <h3>1. Pimalai — Kantiang Bay</h3>
-      <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=70" alt="Beach resort" style="width:100%;height:180px;object-fit:cover;border-radius:10px" />
-      <p>South island flagship. Use hotel transfer from Saladan.</p>
-      <h3>2. Layana — Long Beach (adults-only)</h3>
-      <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=1200&q=70" alt="Bungalows" style="width:100%;height:180px;object-fit:cover;border-radius:10px" />
-      <p>Closer to the pier and dinners off-property.</p>
-      <h3>3. Twin Lotus</h3>
-      <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=70" alt="Sunset beach" style="width:100%;height:180px;object-fit:cover;border-radius:10px" />
-      <p>Softer price if the first two are sold out.</p>
+      <p><span class="goldtag">Stay north</span> so dinners are walkable.</p>
+      <h3>1. Layana Resort & Spa — Long Beach (adults-only)</h3>
+      <img class="hero" src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=1200&q=70" alt="Beach bungalows" />
+      <p>Best honeymoon fit in budget. Beachfront sunsets. Often high $100s to ~$300. Walk / short tuk-tuk to other Long Beach restaurants.</p>
+      <h3>2. Avani+ Koh Lanta</h3>
+      <p>Often $120–220. Same north strip, easier if Layana jumps in January.</p>
+      <h3>3. Twin Lotus or Rawi Warin</h3>
+      <p>Quieter. Twin Lotus is adults-only in high season. Rawi Warin has a hill-pool view; use the buggy. Pimalai beach villas usually break $300 in January.</p>
     </div>
-    <h2>Still to choose</h2>
+    <h2>Easy add-ons</h2>
     <div class="card">
-      <ol>
-        <li>Rayavadee vs Tubkaek villa</li>
-        <li>Pimalai vs Layana</li>
-        <li>Exact January dates</li>
-        <li>LHE or ISB</li>
-      </ol>
+      <table>
+        <tr><th>When</th><th>What</th><th>How</th></tr>
+        <tr><td>Ao Nang evenings</td><td>Night market + halal stalls</td><td>Walk</td></tr>
+        <tr><td>Ao Nang afternoon</td><td>Nopparat Thara sandbar</td><td>Walk or songthaew</td></tr>
+        <tr><td>One morning</td><td>Tiger Cave Temple</td><td>Hotel car, early, modest dress</td></tr>
+        <tr><td>Lanta evening</td><td>Long Beach dinner</td><td>Walk from Layana / Avani+</td></tr>
+        <tr><td>One afternoon</td><td>Old Town</td><td>Hotel car, 2–3 hours</td></tr>
+      </table>
     </div>
   </div>
-  <footer>Planning page · Krabi + Koh Lanta · January</footer>
+  <footer>12 days · Ao Nang + Koh Lanta · ~$300/night cap</footer>
 </body>
 </html>
